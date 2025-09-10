@@ -65,7 +65,10 @@ const Service = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {services.map((service, index) => (
-                <Card key={index} className="p-8 hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
+                <Card
+                  key={index}
+                  className="p-8 hover:shadow-lg transition-all duration-300 hover:-translate-y-2 flex flex-col h-full"
+                >
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
                     <service.icon className="w-8 h-8 text-primary" />
                   </div>
@@ -79,7 +82,7 @@ const Service = () => {
                       </li>
                     ))}
                   </ul>
-                  <Button className="w-full bg-primary hover:bg-primary/90">
+                  <Button className="w-full bg-primary hover:bg-primary/90 mt-auto">
                     Learn More
                   </Button>
                 </Card>
